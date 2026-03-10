@@ -39,7 +39,7 @@ pipeline {
         }
         stage('build'){
             steps{
-                sh 'mvn package -DskipTests -f ./BinaryCalculatorWebapp/ clean package'
+                sh 'mvn package -DskipTests -f ./BinaryCalculatorWebapp/pom.xml'
             }
         }
         stage('containerize'){
